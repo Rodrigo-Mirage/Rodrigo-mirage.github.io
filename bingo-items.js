@@ -1,5 +1,5 @@
 
-let mix = new URLSearchParams(window.location.search).get('mix');
+let mix = new URLSearchParams(window.location.search).get('mode');
 
 var restream = [
     "Encontrar Biggoron",

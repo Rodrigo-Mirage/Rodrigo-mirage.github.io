@@ -2,8 +2,7 @@ const bodyEl = document.querySelector("body");
 const darkModeBtn = document.getElementById("dark-mode-btn");
 const ModeBtn = document.getElementById("mode-btn");
 let darkModeIsOn = true;
-let mix2 = new URLSearchParams(window.location.search).get('mix');
-console.log(mix2)
+let mix2 = new URLSearchParams(window.location.search).get('mode');
 if(mix2 == "mixed"){
   ModeBtn.innerHTML = "Modo: Restream + Voice Chat";
 }else{
