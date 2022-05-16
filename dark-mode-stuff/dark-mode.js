@@ -1,6 +1,6 @@
 const bodyEl = document.querySelector("body");
 const darkModeBtn = document.getElementById("dark-mode-btn");
-let darkModeIsOn = false;
+let darkModeIsOn = true;
 
 // make sure DOM is loaded before allowing click event
 window.addEventListener("DOMContentLoaded", () => {
