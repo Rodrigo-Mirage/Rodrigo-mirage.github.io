@@ -1,6 +1,14 @@
 const bodyEl = document.querySelector("body");
 const darkModeBtn = document.getElementById("dark-mode-btn");
+const ModeBtn = document.getElementById("mode-btn");
 let darkModeIsOn = true;
+let mix2 = urlParams.get('mix')
+
+if(mix2 == "mixed"){
+  ModeBtn.innerHTML = "Modo: Restream + Voice Chat";
+}else{
+  ModeBtn.innerHTML = "Modo: Restream Only";
+}
 
 // make sure DOM is loaded before allowing click event
 window.addEventListener("DOMContentLoaded", () => {
@@ -20,6 +28,14 @@ window.addEventListener("DOMContentLoaded", () => {
       // set dark mode selection in local storage
       let darkThemeEnabled = document.body.classList.contains("dark-mode");
       localStorage.setItem("dark-theme-enabled", darkThemeEnabled);
+    }
+  });
+
+  ModeBtn.addEventListener("click", () => {
+    if (mix2 != "mixed"){
+      location.search = location.search.replace(/mode=[^&$]*/i, 'mode=mixed');
+    }else{
+      location.search = location.search.replace(/mode=[^&$]*/i, 'mode=restream');
     }
   });
 

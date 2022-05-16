@@ -1,19 +1,21 @@
-var bingoItems = [
+
+let mix = urlParams.get('mix')
+
+var restream = [
     "Encontrar Biggoron",
     "Encontrar Farore's",
     "Arco 'Bowlocked'",
     "'A seed é Jet'",
     "ZL sem ZL",
     "Entrar em Fire sem settar Pierre",
-    "Conheceu o vazio de Shadow",
-    "Tem uma tunica e não usou",
+    "Runner conheceu o vazio de Shadow (void out em shadow temple)",
+    "Tem uma tunica e não usou (Fire - Goron tunic/ Water - Zora tunic)",
     "Bk de water em central pillar",
     "Errou a quick kill da gohma",
-    "Isolou um check",
-    "Pegou a dica de LA",
+    "Runner isolou um check",
+    "Runner pegou a dica de LA",
     "Segunda magia em Shadow",
     "Alguém pediu uma 'Contagem agressiva'",
-    "Mais de 50% da call em Live",
     "2 runners em Forest",
     "Item relevante em Tektite grotto",
     "Kakariko village WOTH/Path",
@@ -21,17 +23,33 @@ var bingoItems = [
     "Bomb bag depois de 1h de seed",
     "Dodongo Foolish",
     "Ad por esporte",
-    "Lógica de chaves de spirit",
+    "Comentariasta citou Lógica de chaves de spirit",
     "Bottom of the bottom of the well (Map chest)",
     "Bottom of the well Foolish",
-    "Tepedino Tutoriais foi mencionado",
-    "Mirage tentou aliciar alguem para o Skyward Sword",
-    "Algum clipe do GrafitteX foi comentado",
-    "CesarMartins12 foi parafraseado",
-    "Light mode do gabriel foi lembrado",
+    "Pegar uma dica do que acabou de pegar (Aranhar)",
+    "Wastelands/OGC foolish (PQDM)",
     "Sun song pra voltar pra porta",
     "Acabou as Flechas/Bombas",
-    "Fez chickens",
-    "Dicas do fundo do lago",
+    "Runner fez chickens",
+    "Dicas do fundo do lago (qualquer uma)",
     "'nICE arrows'",
 ];
+
+var voicechat = [
+    "Gusxandi disse 'INTERESSANTE'",
+    "Light mode do Gabriel foi lembrado",
+    "Mirage tentou aliciar alguém para o Skyward Sword",
+    "Algum clipe do GrafitteX foi comentado",
+    "CesarMartins12 foi parafraseado",
+    "Tepedino Tutoriais foi mencionado",
+    "Momento tepeDINÁ (Pedir um item e ele vir)",
+    "Mais de 50% da call em Live",
+];
+
+
+var bingoItems = [];
+if(mix == "mixed"){
+    bingoItems = restream.concat(voicechat);
+}else{
+    bingoItems = restream;
+}
