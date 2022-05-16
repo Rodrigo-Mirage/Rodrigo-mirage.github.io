@@ -33,5 +33,5 @@ var bingoItems = [
     "Acabou as Flechas/Bombas",
     "Fez chickens",
     "Dicas do fundo do lago",
-    "",
+    "'nICE arrows'",
 ];
