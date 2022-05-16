@@ -29,7 +29,7 @@ var bingoItems = [
     "Algum clipe do GrafitteX foi comentado",
     "CesarMartins12 foi parafraseado",
     "Light mode do gabriel foi lembrado",
-    "Sun song pra votlar pra porta",
+    "Sun song pra voltar pra porta",
     "Acabou as Flechas/Bombas",
     "Fez chickens",
     "Dicas do fundo do lago",
