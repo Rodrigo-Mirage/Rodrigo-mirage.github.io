@@ -28,8 +28,10 @@ var bingoItems = [
     "Mirage tentou aliciar alguem para o Skyward Sword",
     "Algum clipe do GrafitteX foi comentado",
     "CesarMartins12 foi parafraseado",
-    "ight mode do gabriel foi lembrado",
+    "Light mode do gabriel foi lembrado",
     "Sun song pra votlar pra porta",
     "Acabou as Flechas/Bombas",
-    "Fez chickens"
+    "Fez chickens",
+    "Dicas do fundo do lago",
+    "",
 ];
